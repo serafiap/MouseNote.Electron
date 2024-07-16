@@ -43,12 +43,15 @@ module.exports = {
     }),
   ],
   publishers: [
-    new PublisherGithub({
-      repository: {
-        owner: 'SeraCell',
-        name: 'MouseNote.Electron',
-      },
-      prerelease: true,
-    })
+    {
+      name: '@electron-forge/publisher-github',
+      config: {
+        repository: {
+          owner: 'SeraCell',
+          name: 'MouseNote.Electron',
+        },
+        prerelease: true,
+      }
+    }
   ]
 };
