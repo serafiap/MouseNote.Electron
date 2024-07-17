@@ -11,9 +11,9 @@ import { saveAs } from 'file-saver';
 export class DetailsService {
   constructor(private storage: StorageMap, private data: DataService, private fileSaverProvider: FileSaverService) {
     this.storage.get('details').subscribe((details) => {
-      this.Name = '(<StoredDetails>details).Name';
-      this.Groups = []//(<StoredDetails>details).Groups;
-      this.ObservationTypes = []//(<StoredDetails>details).ObservationTypes;
+      this.Name = (<StoredDetails>details)?.Name??"";
+      this.Groups = (<StoredDetails>details)?.Groups??[];
+      this.ObservationTypes = (<StoredDetails>details)?.ObservationTypes??[];
     });
   }
   public Groups: TestGroup[] = [{ ID: -1, Name: '' }];
