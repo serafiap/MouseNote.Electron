@@ -3,12 +3,14 @@ import { DataService } from '../../Services/data.service';
 import { MatIconModule } from '@angular/material/icon';
 import { CommonModule } from '@angular/common';
 import { NgbModule } from '@ng-bootstrap/ng-bootstrap';
+import { MatButtonModule } from '@angular/material/button';
 
 @Component({
   selector: 'data-info-bar',
   standalone: true,
   imports: [
     MatIconModule,
+    MatButtonModule,
     CommonModule,
     NgbModule 
   ],
