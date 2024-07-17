@@ -34,8 +34,8 @@ jobs:
       - name: Debug token
         run: echo ${GITHUB_TOKEN:0:5}
         env:
-          GITHUB_TOKEN: ${{ secrets.ELECTRON_FORGE_GITHUB_TOKEN }}
+          GITHUB_TOKEN: ${{ secrets.GITHUB_TOKEN }}
       - name: Publish app
         env:
-          GITHUB_TOKEN: ${{ secrets.ELECTRON_FORGE_GITHUB_TOKEN }}
+          GITHUB_TOKEN: ${{ secrets.GITHUB_TOKEN }}
         run: yarn publish-app
