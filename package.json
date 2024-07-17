@@ -1,10 +1,14 @@
 {
   "name": "mousenote",
   "version": "0.0.1",
-  "description": "Mouse Note",
+  "description": "MouseNote",
   "author": {
     "name": "AS",
     "email": "as@gmail.com"
+  },
+  "repository": {
+    "type": "git",
+    "url": "https://github.com/SeraCell/MouseNote.Electron.git"
   },
   "main": "dist/index.js",
   "scripts": {
