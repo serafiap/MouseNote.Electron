@@ -5,6 +5,7 @@ import { FormsModule } from '@angular/forms';
 import { MatIconModule } from '@angular/material/icon';
 import { CommonModule } from '@angular/common';
 import { NgbModule } from '@ng-bootstrap/ng-bootstrap';
+import { MatButtonModule } from '@angular/material/button';
 
 
 
@@ -14,6 +15,7 @@ import { NgbModule } from '@ng-bootstrap/ng-bootstrap';
   imports: [
     FormsModule,
     MatIconModule,
+    MatButtonModule,
     CommonModule,
     NgbModule 
   ],
