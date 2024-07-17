@@ -1,4 +1,4 @@
-<div id="videoDiv">
+<div id="videoDiv" class="d-flex justify-content-center">
     <video #videoWindow [src]="videoSource" crossOrigin="anonymous" [width]="playerControls.magnifiedWidth"
         [playbackRate]="playerControls.videoSpeed" (canplay)="videoLoaded($event)" (timeupdate)="setCurrentTime()"
         style="min-height: 50vh;">
